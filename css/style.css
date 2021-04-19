@@ -1,0 +1,39 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(161, 248, 248);
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio{
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inicio #texto1{
+    font-size: 20pt;
+    font-weight: bold;
+    color: pink;
+}
+
+#inicio #texto2{
+    font-size: 15pt;
+}
+
+#btn {
+    font-size: 18pt;
+    background-color: rgb(224, 224, 224);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
