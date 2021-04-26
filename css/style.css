@@ -41,14 +41,21 @@ body{
 
 #principal {
     display: none;
-    background-color: blue;
+    background: linear-gradient(30deg, rgb(218, 97, 147), rgb(250, 189, 131));
     width: 100vw;
     height: 100vh;
 }
 
 #A_1{
-    background-color: blueviolet;
+    background-color: rgb(140, 205, 235);
     width: 300px;
     height: 300px;
     border-radius: 50%;
+}
+
+#A_2 {
+    background-color: blueviolet;
+    width: 800px;
+    height: 2px;
+    transform: rotate(20deg);
 }
