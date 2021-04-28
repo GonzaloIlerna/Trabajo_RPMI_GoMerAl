@@ -45,3 +45,18 @@ body{
     width: 100vw;
     height: 100vh;
 }
+
+/* #G_1{
+    background-color: darkgrey;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+} */
+
+#G_2{
+    background-color: darksalmon;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
