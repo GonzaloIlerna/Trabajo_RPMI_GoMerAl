@@ -41,21 +41,44 @@ body{
 
 #principal {
     display: none;
-    background: linear-gradient(30deg, rgb(218, 97, 147), rgb(250, 189, 131));
+    background: linear-gradient(30deg, rgb(233, 145, 226), rgb(152, 176, 240));
     width: 100vw;
     height: 100vh;
 }
 
+/* CIRCULO */
 #A_1{
-    background-color: rgb(140, 205, 235);
+    background-color: rgb(235, 218, 140);
     width: 300px;
     height: 300px;
     border-radius: 50%;
 }
 
+#A_1:hover {
+    /* border: inset 50px solid white; */
+    box-shadow: inset 5px -13px 8px 2px 0 white;
+    /* box-shadow: inset -15px -13px 0 white; */
+}
+
+/* LINEA */
 #A_2 {
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
     width: 800px;
-    height: 2px;
+    height: 5px;
     transform: rotate(20deg);
+}
+
+/* ROMBO */
+#A_3 {
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid #555; 
+    background: #64b8b1;
+    transform: rotate(45deg) skew(15deg, 15deg);
+    transition: infinite;
+}
+
+#A_3:hover {
+    transform: rotateX(90deg) skew(15deg, 15deg);
+    transition: all infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }

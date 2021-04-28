@@ -11,6 +11,26 @@ btn.addEventListener("click",empezar)
 
 /////////////////////////
 
-$ ("#A_1").click(function(){
-    $("body").css("background", "linear-gradient(30deg,pink,green)")
+//Se cambia el fondo al hacer click
+
+let degrad_1 = "linear-gradient(30,rgb(218, 97, 147),rgb(250, 189, 131))";
+let degrad_2 = "radial-gradient(rgb(218, 97, 147),rgb(250, 189, 131))";
+
+$ ("#principal").click(function(){
+
+    if ($("#principal").style.background == degrad_1){
+        $("#principal").style.background = degrad_2
+    } else if ($("#principal").style.background == degrad_2){
+        $("#principal").style.background = degrad_1
+    }
 })
+
+$ ("#A_1").hover(function(){
+    $("#A_1").css("background","radial-gradient(white,yellow.yellow.white)")
+})
+
+//Los elementos se arrastran
+$("#A_1").draggable();
+$("#A_2").draggable(); 
+
+
