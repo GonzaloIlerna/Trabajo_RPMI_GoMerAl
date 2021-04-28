@@ -41,17 +41,21 @@ body{
 
 #principal {
     display: none;
-    background-color: blue;
+    background: linear-gradient(30deg, rgb(255, 190, 241), white);
     width: 100vw;
     height: 100vh;
 }
 
-/* #G_1{
-    background-color: darkgrey;
+#G_1{
+    background-color: rgb(255, 0, 0);
     position: absolute;
     width: 100px;
     height: 100px;
-} */
+    right: 99.98%;
+    border-radius: 50%;
+    /* Esto va a ser un circulo que va a estar enscondido por el exterior 
+    de la pantalla y hay que encontrarla y al hacer click en el se cambiara el fondo*/
+}
 
 #G_2{
     background-color: darksalmon;
@@ -59,4 +63,13 @@ body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+
+#expl{
+    left: 50px;
+    position:absolute;
+    bottom: 50px;
+    width: 200px;
+    background-color: black;
+    color: white;
 }
