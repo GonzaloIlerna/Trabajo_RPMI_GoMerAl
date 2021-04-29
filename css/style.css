@@ -41,7 +41,35 @@ body{
 
 #principal {
     display: none;
-    background-color: blue;
+    background-color: rgb(147, 171, 238);
     width: 100vw;
     height: 100vh;
 }
+
+#M_1{
+    width: 126px;
+    height: 180px;
+    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    cursor: pointer;
+    position: relative;
+    left: 650px;
+    
+    
+}
+
+#M_1:hover{
+    background:linear-gradient(30deg,rgb(204, 51, 13),rgb(10, 120, 209));
+}  
+
+
+    
+    
+    
+
+
+
+
+
+
