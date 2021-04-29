@@ -6,3 +6,8 @@ function empezar(){
 }
 
 btn.addEventListener("click",empezar)
+
+
+$( function() {
+    $( "#draggable" ).draggable();
+  } );

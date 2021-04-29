@@ -47,21 +47,30 @@ body{
 }
 
 #M_1{
-    width: 126px;
-    height: 180px;
-    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    cursor: pointer;
-    position: relative;
-    left: 650px;
-    
+    width: 350px; height: 120px;
+	background: #BFF;
+	background: linear-gradient(top, #BFF 5%, #DFF 100%);
+	background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
+	background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+	background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+	background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+	top: 50px; left: 50px;
+	border-radius: 100px;
+	position: absolute;
+	margin: 120px auto 20px;
     
 }
 
 #M_1:hover{
     background:linear-gradient(30deg,rgb(204, 51, 13),rgb(10, 120, 209));
 }  
+
+#M_2{
+    content: '';
+	position: absolute;
+	background: #FFF;
+	z-index: -1
+}
 
 
     
