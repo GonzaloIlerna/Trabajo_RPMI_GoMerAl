@@ -47,10 +47,20 @@ body{
 }
 
 /* CIRCULO */
-#A_1{
+/* #A_1{
     background-color: rgb(235, 218, 140);
     width: 300px;
     height: 300px;
+    border-radius: 50%;
+} */
+
+#A_1{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid yellow;
+    border-bottom: 100px solid yellow;
+    border-left: 100px solid yellow;
     border-radius: 50%;
 }
 
