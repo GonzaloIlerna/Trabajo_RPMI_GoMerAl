@@ -37,9 +37,6 @@ $("#G_1").click(function(){
     console.log(texto.textContent);
 })
 
-$("#G_2").draggable();
-
-$("#G_1").draggable();
 
 let ocultar = document.getElementById("G_4");
 
@@ -49,3 +46,19 @@ function quitar(){
 };
 
 ocultar.addEventListener("dblclick",quitar);
+
+$("#G_5").draggable();
+
+$("#G_6").draggable();
+
+$("#G_7").draggable();
+
+$("#G_2").draggable();
+
+$("#G_1").draggable();
+
+
+
+// Hacer un dragabble revert y tambien un dropable que cuando sea afirmativo el 
+// el dropable se desactive el dragable y se quede donde esta el objeto/imagen
+// hacer que se desactive todo y no se pueda mover mas ese objeto
