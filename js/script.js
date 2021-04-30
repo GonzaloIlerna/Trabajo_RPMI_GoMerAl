@@ -16,22 +16,26 @@ btn.addEventListener("click",empezar)
 let degrad_1 = "linear-gradient(30deg, rgb(218, 97, 147), rgb(250, 189, 131))";
 let degrad_2 = "radial-gradient(rgb(218, 97, 147), rgb(250, 189, 131))";
 
-$ ("#principal").on("click",function(){
+// $ ("#principal").on("click",function(){
 
-    if ($("#principal").style.background == degrad_1){
-        $("#principal").style.background = degrad_2
-    } else if ($("#principal").style.background == degrad_2){
-        $("#principal").style.background = degrad_1
-    }
+//     if($("#A_1").style.background <= ){
+//         $("#principal").style.background = degrad_2
+//     } else if ($("#principal").style.background == degrad_2){
+//         $("#principal").style.background = degrad_1
+//     }
+// })
+
+
+
+// $ ("#A_1").hover(function(){
+//     $("#A_1").css("background","radial-gradient(white,yellow.yellow.white)")
+// })
+
+$("A_1").dblclick(function(){
+    $("A_1").animate({
+        left: "100%",
+    })
 })
-
-
-
-$ ("#A_1").hover(function(){
-    $("#A_1").css("background","radial-gradient(white,yellow.yellow.white)")
-})
-
-$("A_3")
 
 //Los elementos se arrastran
 $("#A_1").draggable();

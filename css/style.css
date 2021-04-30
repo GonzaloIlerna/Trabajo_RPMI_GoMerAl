@@ -92,3 +92,36 @@ body{
     transform: rotateX(90deg) skew(15deg, 15deg);
     transition: all infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+@keyframes gradient {
+    10%{
+        background: linear-gradient(lightblue,lightsalmon,lightpink);
+    }
+    20%{
+        background: radial-gradient();
+    }
+    30%{
+        background:repeating-linear-gradient();
+    }
+    40%{
+        background: linear-gradient();
+    }
+    50%{
+        background: radial-gradient();
+    }
+    60%{
+        background: repeating-radial-gradient();
+    }
+    70%{
+        background: linear-gradient();
+    }
+    80%{
+        background: radial-gradient();
+    }
+    90%{
+        background: repeating-linear-gradient();
+    }
+    100%{
+        background: linear-gradient();
+    }
+}
