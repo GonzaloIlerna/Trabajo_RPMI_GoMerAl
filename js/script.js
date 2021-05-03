@@ -47,7 +47,11 @@ function quitar(){
 
 ocultar.addEventListener("dblclick",quitar);
 
-$("#G_5").draggable();
+$("#G_5").droppable({
+    drop: function(event, ui){
+        $("#G_6c").show();
+    }
+});
 
 $("#G_6").draggable();
 
