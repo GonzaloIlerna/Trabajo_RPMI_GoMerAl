@@ -10,6 +10,7 @@ btn.addEventListener("click",empezar)
 
 let nclicks=0;
 
+$("#M_2").hide()
 
 $("#M_1").click(function(){
     nclicks++;
@@ -24,6 +25,8 @@ if(nclicks==15){
             
         }
         )
+
+        $("#M_2").show()
         // document.getElementById("M_1").style.left="30px";
 }
 });
