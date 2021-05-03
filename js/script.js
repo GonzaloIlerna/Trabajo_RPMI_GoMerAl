@@ -9,23 +9,52 @@ function empezar(){
 
 btn.addEventListener("click",empezar)
 
-/////////////////////////
+//_____________________________________________________//
 
 //Se cambia el fondo al hacer click
 
-let degrad_1 = "linear-gradient(30deg, rgb(218, 97, 147), rgb(250, 189, 131))";
-let degrad_2 = "radial-gradient(rgb(218, 97, 147), rgb(250, 189, 131))";
+let fondo = 1;
 
-// $ ("#principal").on("click",function(){
+$("#principal").click(function(){
+    if (fondo ==1){
+        $("#principal").css(
+            "background", "linear-gradient(30deg,lightsalmon,lightblue,lightpink)"
+        )
+        fondo = 2
+        console.log()
 
-//     if($("#A_1").style.background <= ){
-//         $("#principal").style.background = degrad_2
-//     } else if ($("#principal").style.background == degrad_2){
-//         $("#principal").style.background = degrad_1
-//     }
-// })
+    }else if (fondo == 2){
+        $("#principal").css(
+            "background", "radial-gradient(1000px,salmon,lightcyan,pink)"
+        )
+        fondo = 3
+    }else if (fondo == 3){
+        $("#principal").css(
+            "background", "repeating-linear-gradient(135deg,lightseagreen,lightcoral,#c18ef1)"
+        )
+        fondo = 1
+    }else if (fondo == 4){
+        $("principal").css(
+            "background", "radial-gradient(lightsalmon,lightblue,lightpink)"
+        )
+        fondo = 5
+    }else if (fondo == 5){
+        $("principal").css(
+            "background", "repeating-linear-gradient(lightsalmon,lightblue,lightpink)"
+        )
+        fondo = 1
+    }
+})
 
+//_____________________________________________________//
 
+// INTERACCIONES DE LOS ELEMENTOS
+//Los elementos se arrastran
+$("#A_1").draggable();
+$("#A_2").draggable(); 
+$("#A_3").draggable(); 
+
+// / / / / / / / / / / / / / A_1
 
 // $ ("#A_1").hover(function(){
 //     $("#A_1").css("background","radial-gradient(white,yellow.yellow.white)")
@@ -37,9 +66,6 @@ $("A_1").dblclick(function(){
     })
 })
 
-//Los elementos se arrastran
-$("#A_1").draggable();
-$("#A_2").draggable(); 
-$("#A_3").draggable(); 
+
 
 

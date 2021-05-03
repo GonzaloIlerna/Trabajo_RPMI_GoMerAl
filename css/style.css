@@ -54,7 +54,9 @@ body{
     border-radius: 50%;
 } */
 
+/*COME COCOS*/
 #A_1{
+    position: absolute;
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
@@ -65,13 +67,12 @@ body{
 }
 
 #A_1:hover {
-    /* border: inset 50px solid white; */
-    box-shadow: inset 5px -13px 8px 2px 0 white;
-    /* box-shadow: inset -15px -13px 0 white; */
+    box-shadow: inset 5px -13px 0 white;
 }
 
 /* LINEA */
 #A_2 {
+    position: absolute;
     background-color: rgb(255, 255, 255);
     width: 800px;
     height: 5px;
@@ -80,6 +81,7 @@ body{
 
 /* ROMBO */
 #A_3 {
+    position: absolute;
     width: 100px; 
     height: 100px; 
     border: 3px solid #555; 
@@ -93,35 +95,3 @@ body{
     transition: all infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-@keyframes gradient {
-    10%{
-        background: linear-gradient(lightblue,lightsalmon,lightpink);
-    }
-    20%{
-        background: radial-gradient();
-    }
-    30%{
-        background:repeating-linear-gradient();
-    }
-    40%{
-        background: linear-gradient();
-    }
-    50%{
-        background: radial-gradient();
-    }
-    60%{
-        background: repeating-radial-gradient();
-    }
-    70%{
-        background: linear-gradient();
-    }
-    80%{
-        background: radial-gradient();
-    }
-    90%{
-        background: repeating-linear-gradient();
-    }
-    100%{
-        background: linear-gradient();
-    }
-}
