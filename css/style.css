@@ -4,10 +4,11 @@ body{
     background-color: rgb(161, 248, 248);
     justify-content: center;
     align-items: center;
-    margin: 0%;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #inicio{
@@ -55,6 +56,44 @@ body{
 } */
 
 /*COME COCOS*/
+#malla {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f";
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns:; */
+}
+
+#m1 {
+    background-color: blueviolet;
+    grid-area: a;
+    
+}
+#m2 {
+    grid-area: b;
+}
+#m3 {
+    grid-area: c;
+}
+#m4 {
+    background-color: chartreuse;
+    grid-area: d;
+}
+#m5 {
+    grid-area: e;
+}
+#m6 {
+    grid-area: f;
+}
+#m1, #m2 #m3 #m4 #m5 #m6 {
+    display: flex;
+}
+
+
 #A_1{
     position: absolute;
     width: 0;
@@ -64,6 +103,12 @@ body{
     border-bottom: 100px solid yellow;
     border-left: 100px solid yellow;
     border-radius: 50%;
+    scale: 1;
+    transition: all 2s;
+
+    /* transition: filter 2s; */
+    
+
 }
 
 #A_1:hover {

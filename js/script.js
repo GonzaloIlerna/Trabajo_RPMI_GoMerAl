@@ -21,7 +21,6 @@ $("#principal").click(function(){
             "background", "linear-gradient(30deg,lightsalmon,lightblue,lightpink)"
         )
         fondo = 2
-        console.log()
 
     }else if (fondo == 2){
         $("#principal").css(
@@ -60,11 +59,41 @@ $("#A_3").draggable();
 //     $("#A_1").css("background","radial-gradient(white,yellow.yellow.white)")
 // })
 
-$("A_1").dblclick(function(){
-    $("A_1").animate({
-        left: "100%",
-    })
+// let pos_1 = ;
+// let pos_2 = ;
+
+// function escalar(){
+//     $("#A_1").css("scale" , "1.5")
+// }
+
+
+//     if($("#A_1").css("left" , "560px")){
+
+//       escalar();
+
+//     }else if($("#A_1").css("top", "50%")){
+
+//         $("#A_1").css("-webkit-filtre", "blur(10px)")
+//     }
+//     console.log()
+
+
+$("#m4").droppable({
+    accept:$("#A_1"),
+    drop: function( event, ui ) {
+        $("#A_1").css("scale", "1.5")
+    }
 })
+
+$("#m3").droppable({
+    accept:$("#A_1"),
+    drop: function( event, ui ) {
+        $("#A_1").css("-webkit-filter", "blur(10px)")
+        $("#A_1").css("scale", "1")
+    }
+})
+
+
 
 
 
