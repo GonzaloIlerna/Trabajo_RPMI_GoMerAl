@@ -10,26 +10,32 @@ btn.addEventListener("click",empezar)
 
 let nclicks=0;
 
-$("#M_2").hide()
-
+$("#M_12").hide()
+// corazon oculto
 $("#M_1").click(function(){
     nclicks++;
     console.log(nclicks);
-if(nclicks==15){
+if(nclicks==12){
         
-        $("#M_2").css({
+        $("#M_12").css({
             "left": "2420px",
-            "top": "60px",
+            "top": "150px",
             
 
             
         }
         )
 
-        $("#M_2").show()
+        $("#M_12").show()
         // document.getElementById("M_1").style.left="30px";
+        // corazon aparece
+        $("#M_1").hide()
+        // el huevo se esconde
 }
 });
 
+$("#M_2").draggable()
+$("#M_2").droppable()
 
-
+$("#M_22").hide()
+$("#M_22").show()
