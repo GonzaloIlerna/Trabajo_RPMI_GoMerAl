@@ -77,19 +77,59 @@ $("#A_3").draggable();
 //     }
 //     console.log()
 
-
-$("#m4").droppable({
+$("#m1").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
-        $("#A_1").css("scale", "1.5")
+        $("#A_1").css("-webkit-filter", "blur(0px)"),
+        $("#A_1").css("scale", "1"),
+        $("#A_1").css("border-right", "yellow"),
+        $("#A_1").css("rotate", "0deg")
+    }
+})
+
+$("#m2").droppable({
+    accept:$("#A_1"),
+    drop: function( event, ui ) {
+        $("#A_1").css("-webkit-filter", "blur(10px)"),
+        $("#A_1").css("scale", "1")
     }
 })
 
 $("#m3").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
-        $("#A_1").css("-webkit-filter", "blur(10px)")
+        $("#A_1").css("-webkit-filter", "blur(10px)"),
         $("#A_1").css("scale", "1")
+    }
+})
+
+$("#m4").droppable({
+    accept:$("#A_1"),
+    drop: function( event, ui ) {
+        $("#A_1").css("scale", "1.5"),
+        $("#A_1").css("-webkit-filter", "blur(0px)"),
+        $("#A_1").css("border-right", "transparent"),
+        $("#A_1").css("scale", "1.5")
+    }
+})
+
+$("#m5").droppable({
+    accept:$("#A_1"),
+    drop: function( event, ui ) {
+        $("#A_1").css("scale", "1.5"),
+        $("#A_1").css("-webkit-filter", "blur(0px)"),
+        $("#A_1").css("border-right", "transparent"),
+        $("#A_1").css("scale", "1.5")
+    }
+})
+
+$("#m6").droppable({
+    accept:$("#A_1"),
+    drop: function( event, ui ) {
+        $("#A_1").css("scale", "1.5"),
+        $("#A_1").css("-webkit-filter", "blur(0px)"),
+        $("#A_1").css("border-right", "transparent"),
+        $("#A_1").css("scale", "1.5")
     }
 })
 
