@@ -24,7 +24,7 @@ $("#principal").click(function(){
 
     }else if (fondo == 2){
         $("#principal").css(
-            "background", "radial-gradient(1000px,salmon,lightcyan,pink)"
+            "background", "radial-gradient(1000px,salmon,lightcyan,pink)",
         )
         fondo = 3
     }else if (fondo == 3){
@@ -55,34 +55,13 @@ $("#A_3").draggable();
 
 // / / / / / / / / / / / / / A_1
 
-// $ ("#A_1").hover(function(){
-//     $("#A_1").css("background","radial-gradient(white,yellow.yellow.white)")
-// })
-
-// let pos_1 = ;
-// let pos_2 = ;
-
-// function escalar(){
-//     $("#A_1").css("scale" , "1.5")
-// }
-
-
-//     if($("#A_1").css("left" , "560px")){
-
-//       escalar();
-
-//     }else if($("#A_1").css("top", "50%")){
-
-//         $("#A_1").css("-webkit-filtre", "blur(10px)")
-//     }
-//     console.log()
+//El comecocos activa interacciones segun su ubicación en un grid de 3x2
 
 $("#m1").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(0px)"),
         $("#A_1").css("scale", "1"),
-        $("#A_1").css("border-right", "yellow"),
         $("#A_1").css("rotate", "0deg")
     }
 })
@@ -91,7 +70,8 @@ $("#m2").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(10px)"),
-        $("#A_1").css("scale", "1")
+        $("#A_1").css("scale", "1"),
+        $("#A_1").css("rotate", "0deg")
     }
 })
 
@@ -99,37 +79,35 @@ $("#m3").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(10px)"),
-        $("#A_1").css("scale", "1")
+        $("#A_1").css("scale", "1.5"),
+        $("#A_1").css("rotate", "0deg")
     }
 })
 
 $("#m4").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
-        $("#A_1").css("scale", "1.5"),
         $("#A_1").css("-webkit-filter", "blur(0px)"),
-        $("#A_1").css("border-right", "transparent"),
-        $("#A_1").css("scale", "1.5")
+        $("#A_1").css("scale", "1.5"),
+        $("#A_1").css("rotate", "0deg")
     }
 })
 
 $("#m5").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
-        $("#A_1").css("scale", "1.5"),
         $("#A_1").css("-webkit-filter", "blur(0px)"),
-        $("#A_1").css("border-right", "transparent"),
-        $("#A_1").css("scale", "1.5")
+        $("#A_1").css("scale", "1"),
+        $("#A_1").css("rotate","180deg")
     }
 })
 
 $("#m6").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
-        $("#A_1").css("scale", "1.5"),
         $("#A_1").css("-webkit-filter", "blur(0px)"),
-        $("#A_1").css("border-right", "transparent"),
-        $("#A_1").css("scale", "1.5")
+        $("#A_1").css("scale", "1"),
+        $("#A_1").css("rotate", "180deg")
     }
 })
 
