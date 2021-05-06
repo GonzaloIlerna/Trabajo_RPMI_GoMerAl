@@ -137,23 +137,26 @@ body{
     height: 0px;
     border-right: 70px solid transparent;
     border-left: 70px solid transparent;
-    border-top: 100px solid #995cd12f;
+    border-top: 100px solid #995cd1;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     cursor:grab;
+    z-index: 21;
+    position: relative;
+
+    transition: transform 4s in;
 
 
   }
 
-  #M_22{
-    border: solid 2px black;
-    width: 200px;
-    height: 200px;
-    
-  }
 
   #fotoespacio{
     width: 200px;
     height: 200px;
+    top: 10px;
+    left: 200px;
+    border: solid 2px rgb(202, 15, 15);
+    z-index: 2;
+    position: relative;
   }

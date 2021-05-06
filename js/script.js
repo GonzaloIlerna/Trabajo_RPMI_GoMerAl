@@ -34,8 +34,18 @@ if(nclicks==12){
 }
 });
 
-$("#M_2").draggable()
-$("#M_2").droppable()
+$("#M_22").hide();
 
-$("#M_22").hide()
-$("#M_22").show()
+ $("#M_2").draggable({ 
+    start: function() {
+        $("#M_22").show();
+        
+    }
+})
+ 
+ $("#M_22").droppable({
+     drop: function (){
+          $("#M_2").css("transform" , "rotate(360deg)");
+     }
+ })
+ 
