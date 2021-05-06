@@ -49,21 +49,17 @@ function quitar(){
 
 ocultar.addEventListener("dblclick",quitar);
 
-$("#G_5").droppable({
-    accept: "#G_6",
-    
-    drop: function(event, ui){
-    $("#G_6c").show();
-    $("#G_6").hide();
-}});
+    $("#G_5").droppable({
+             
+        drop: function(event, ui){
+            $("#G_7c").show();
+            $("#G_7").hide();
+        }
+        
+    });
 
-$("#G_5").droppable({
-    accept: "#G_7",
-    
-    drop: function(event, ui){
-    $("#G_7c").show();
-    $("#G_7").hide();
-}});
+
+
 
 
 $("#G_6").draggable();
@@ -96,8 +92,8 @@ $("#G_1").draggable();
     correccionX = posicion.x;
     correccionY = posicion.y;
 
-    miCanvas.width = 500;
-    miCanvas.height = 500;
+    miCanvas.width = 2500;
+    miCanvas.height = 2000;
 
     //======================================================================
     // FUNCIONES
@@ -132,7 +128,7 @@ $("#G_1").draggable();
             ctx.lineJoin = ctx.lineCap = 'round';
             ctx.lineWidth = 1;
             // Color de la linea
-            ctx.strokeStyle = '#fff';
+            ctx.strokeStyle = '#00000';
             // Marca el nuevo punto
             if (event.changedTouches == undefined) {
                 // Versión ratón

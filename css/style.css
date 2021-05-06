@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #inicio{
@@ -25,6 +26,7 @@ body{
     font-size: 20pt;
     font-weight: bold;
     color: pink;
+    z-index: 2;
 }
 
 #inicio #texto2{
@@ -37,6 +39,7 @@ body{
     padding: 10px 15px 10px 15px;
     border-radius: 10px;
     cursor: pointer;
+    z-index: 2;
 }
 
 #principal {
@@ -54,6 +57,7 @@ body{
     right: 99.98%;
     border-radius: 50%;
     cursor: move;
+    z-index: 2;
     /* Esto va a ser un circulo que va a estar enscondido por el exterior 
     de la pantalla y hay que encontrarla y al hacer click en el se cambiara el fondo*/
 }
@@ -65,6 +69,7 @@ body{
     height: 100px;
     border-radius: 50%;
     cursor: move;
+    z-index: 2;
 }
 
 #expl{
@@ -75,6 +80,7 @@ body{
     background-color: black;
     color: white;
     display: block;
+    z-index: 2;
 }
 
 #p2{
@@ -85,6 +91,7 @@ body{
     width: 200px;
     background-color: black;
     color: white;
+    z-index: 2;
 
 }
 
@@ -98,6 +105,7 @@ body{
     bottom: 10px;
     position: absolute;
     cursor:wait;
+    z-index: 2;
 }
 
 #G_4{
@@ -110,6 +118,7 @@ body{
     top:47%;
     left: 47%;
     cursor: pointer;
+    z-index: 2;
 }
 
 #G_5{
@@ -121,6 +130,7 @@ body{
     border-right:55px solid transparent;
     top:30%;
     left: 20%;
+    z-index: 2;
 }
 
 #G_6{
@@ -186,8 +196,10 @@ body{
 }
 
 #pizarra{
-    background-color: black;
+    background-color: #00000000;
     right: 0%;
     top: 0%;
     position: absolute;
+    cursor: crosshair;
+    z-index: 0;
 }
