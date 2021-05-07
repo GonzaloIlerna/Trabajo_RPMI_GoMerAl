@@ -72,29 +72,6 @@ body{
     z-index: 2;
 }
 
-#expl{
-    left: 50px;
-    position:absolute;
-    bottom: 3%;
-    width: 200px;
-    background-color: black;
-    color: white;
-    display: block;
-    z-index: 2;
-}
-
-#p2{
-    position: absolute;
-    display: block;
-    bottom: 3%;
-    left: 300px;
-    width: 200px;
-    background-color: black;
-    color: white;
-    z-index: 2;
-
-}
-
 #G_3{
     width: 0; 
     height: 0; 
@@ -105,19 +82,6 @@ body{
     bottom: 10px;
     position: absolute;
     cursor:wait;
-    z-index: 2;
-}
-
-#G_4{
-    width:1px;
-    height:1px;
-    border-bottom:100px solid #8AC007;
-    border-left:55px solid transparent;
-    border-right:55px solid transparent;
-    position: absolute;
-    top:47%;
-    left: 47%;
-    cursor: pointer;
     z-index: 2;
 }
 
@@ -138,6 +102,8 @@ body{
     width: 70px;
     height: 50px;
     z-index: 11;
+    right: 2%;
+    top: 50%;
 }
 
 #G_6 img{
@@ -150,6 +116,8 @@ body{
     width: 90px;
     height: 90px;
     z-index: 10;
+    left: 2%;
+    top: 50%;
     opacity: 60%;
 }
 
