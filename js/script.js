@@ -23,8 +23,7 @@ if(nclicks==12){
             
 
             
-        }
-        )
+        })
 
         $("#M_12").show()
         // document.getElementById("M_1").style.left="30px";
