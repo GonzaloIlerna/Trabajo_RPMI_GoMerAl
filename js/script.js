@@ -28,7 +28,7 @@ $("#principal").dblclick(function(){
         fondo = 3
     }else if (fondo == 3){
         $("#principal").css(
-            "background", "repeating-linear-gradient(135deg,lightseagreen,lightcoral,#c18ef1)"
+            "background", "circular-gradient(135deg,lightseagreen,lightcoral,#c18ef1)"
         )
         fondo = 1
     }else if (fondo == 4){
@@ -44,7 +44,6 @@ $("#principal").dblclick(function(){
     }
 })
 
-//_____________________________________________________//
 
 // INTERACCIONES DE LOS ELEMENTOS
 //Los elementos se arrastran
@@ -54,9 +53,17 @@ $("#A_3").draggable();
 
 // / / / / / / / / / / / / / A_1
 
-//El comecocos activa interacciones segun su ubicación en un grid de 3x2
+//El comecocos activa interacciones segun su ubicación en este grid
+//   _____________________________
+//  |         |         |         |
+//  |    1    |    2    |    3    |
+//  |_________|_________|_________|
+//  |         |         |         |
+//  |    4    |    5    |    6    |
+//  |_________|_________|_________|
 
-$("#m1").droppable({
+
+$("#malla_1").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(0px)"),
@@ -65,7 +72,7 @@ $("#m1").droppable({
     }
 })
 
-$("#m2").droppable({
+$("#malla_2").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(10px)"),
@@ -74,7 +81,7 @@ $("#m2").droppable({
     }
 })
 
-$("#m3").droppable({
+$("#malla_3").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(10px)"),
@@ -83,7 +90,7 @@ $("#m3").droppable({
     }
 })
 
-$("#m4").droppable({
+$("#malla_4").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(0px)"),
@@ -92,16 +99,16 @@ $("#m4").droppable({
     }
 })
 
-$("#m5").droppable({
+$("#malla_5").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(0px)"),
         $("#A_1").css("scale", "1"),
-        $("#A_1").css("rotate","180deg")
+        $("#A_1").css("rotate","900deg")
     }
 })
 
-$("#m6").droppable({
+$("#malla_6").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
         $("#A_1").css("-webkit-filter", "blur(0px)"),
@@ -109,6 +116,27 @@ $("#m6").droppable({
         $("#A_1").css("rotate", "180deg")
     }
 })
+
+
+
+// / / / / / / / / / / / / / A_2
+
+
+
+
+
+// / / / / / / / / / / / / / A_3
+
+$("#A_3").droppable({
+    accept:$("#A_2"),
+    drop: function( event, ui ) {
+        $("#A_2").css("animation", "running");
+    }
+})
+
+
+
+
 
 
 

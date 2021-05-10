@@ -25,7 +25,7 @@ body{
     z-index: -5;
 }
 
-#inicio #texto1{
+#inicio #titulo{
     height: 300px;
     font-family: title;
     font-size: 60pt;
@@ -33,15 +33,7 @@ body{
     filter: drop-shadow(10px 5px rgb(255, 203, 225));
 }
 
-#inicio #texto2,#texto3{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-
-    width: 520px;
-    height: 100px;
-    padding: 20px;
-
+#intro_txt,#help_txt1,#help_txt2 {
     background-color: #fff0c6cc;
     border-radius: 20px;
     filter: drop-shadow(8px 5px 3px #756845cc);
@@ -51,6 +43,38 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: justify;
+}
+
+#intro_txt {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 50px;
+
+    width: 520px;
+    height: 80px;
+    padding: 30px;
+}
+#help_txt1 {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    margin: 50px;
+
+    width: 280px;
+    height: 50px;
+    padding: 20px;
+}
+#help_txt2 {
+    position: absolute;
+    top: 180px;
+    left: 360px;
+    margin: 50px;
+
+    width: 180px;
+    height: 50px;
+    padding: 20px;
 }
 
 #btn {
@@ -124,25 +148,25 @@ body{
     grid-template-rows: 1fr 1fr;
 }
 
-#m1 {
+#malla_1 {
     grid-area: a;
 }
-#m2 {
+#malla_2 {
     grid-area: b;
 }
-#m3 {
+#malla_3 {
     grid-area: c;
 }
-#m4 {
+#malla_4 {
     grid-area: d;
 }
-#m5 {
+#malla_5 {
     grid-area: e;
 }
-#m6 {
+#malla_6 {
     grid-area: f;
 }
-#m1, #m2 #m3 #m4 #m5 #m6 {
+#malla_1, #malla_2, #malla_3, #malla_4, #malla_5, #malla_6 {
     display: flex;
 }
 
@@ -174,14 +198,43 @@ body{
     box-shadow: inset 5px -13px 0 white;
 }
 
-/* LINEA */
+
+
+
+/*ESFERA 3D*/
+
 #A_2 {
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 800px;
-    height: 5px;
-    transform: rotate(20deg);
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+    left: 60%;
+
+    transform-style: preserve-3d;
+    animation: rotate 5s linear infinite ;
+    animation-play-state: paused;
 }
+
+#A2_a, #A2_b, #A2_c {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    border: 10px solid white;
+    border-radius: 50%;
+}
+#A2_b {
+    transform: rotateX(90deg);
+}
+#A2_c {
+    transform: rotateY(90deg);
+}
+
+
+
 
 /* CUBO GIRATORIO */
 #A_3 {
@@ -205,7 +258,6 @@ body{
 
     position: absolute;
     transform: translateZ(150px);
-
     transition: 1s;
 }
 
@@ -290,15 +342,6 @@ body{
 
 }
 
-
-@keyframes rotate {
-    from {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    to {
-        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-}
 
 #A_3:hover {
     transform: rotateX(90deg) skew(15deg, 15deg);
@@ -469,18 +512,6 @@ body{
     left: 10rem;
     animation: beating 2s ease infinite;
   }
-  
-  @keyframes beating {
-    0% {
-        transform: rotate(45deg) scale(1);
-    }
-    50% {
-      transform: rotate(45deg) scale(2);
-    }
-    100% {
-        transform: rotate(45deg) scale(1);
-    }
-  }
 
   #M_2{
     width: 0px;
@@ -528,3 +559,31 @@ body{
     color: black;
     text-decoration: none;
 }
+
+
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+@keyframes beating {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(2);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+  }
+
+
