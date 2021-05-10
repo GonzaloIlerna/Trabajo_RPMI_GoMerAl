@@ -11,11 +11,8 @@ body{
 }
 
 #inicio{
-    display: block;
-    background-color: rgb(240, 222, 173, 0.8);
-    width: 600px;
-    height: 300px;
-    padding: 20px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,15 +26,31 @@ body{
 }
 
 #inicio #texto1{
+    height: 300px;
     font-family: title;
-    font-size: 40pt;
+    font-size: 60pt;
     color: rgb(0, 0, 0);
-    filter: drop-shadow(10px 5px pink);
+    filter: drop-shadow(10px 5px rgb(255, 203, 225));
 }
 
-#inicio #texto2{
+#inicio #texto2,#texto3{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    width: 520px;
+    height: 100px;
+    padding: 20px;
+
+    background-color: #fff0c6cc;
+    border-radius: 20px;
+    filter: drop-shadow(8px 5px 3px #756845cc);
+
     font-size: 15pt;
     font-style: oblique;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #btn {
@@ -152,8 +165,8 @@ body{
 
     transition: filter 2s,
     scale 2s ease-in-out,
-    rotate 0.5s,
-    left 2s;
+    rotate 0.5s;
+
 
 }
 
