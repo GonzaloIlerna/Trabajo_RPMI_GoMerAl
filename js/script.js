@@ -11,7 +11,7 @@ btn.addEventListener("click",empezar)
 let nclicks=0;
 
 $("#M_12").hide()
-// corazon oculto
+// corazón oculto
 $("#M_1").click(function(){
     nclicks++;
     console.log(nclicks);
@@ -45,7 +45,15 @@ $("#M_22").hide();
  
  $("#M_22").droppable({
      drop: function (){
-          $("#M_2").css("transform" , "rotate(360deg)");
+          $("#M_2").css("transform" , "rotate(360deg) scale(0)");
+        //   $("#M_2").css("transform" , "scale(.0)");
+          
      }
  })
- 
+// El espacio aparece cuando agarras la luna e inmediatamente ésta gira al soltarla
+_____________________________________________________________________________________
+$("#M_3").click( function( event ) {
+    event.preventDefault();
+});
+
+// se pinta en la pizarra

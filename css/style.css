@@ -56,19 +56,18 @@ body{
     left: 2420px;
     top: 60px;
     cursor: pointer;
+    /* Huevo */
 }
+
+/* Huevo */
 
 #M_1:hover{
     background:linear-gradient(30deg,rgb(241, 233, 231),rgba(209, 196, 10, 0.15));
+    
 }  
 
-#M_12{
-        width: 50px;
-        height: 50px;
-        transform: rotate(45deg);
-        background: red;
-      
-}
+/* El huevo aparece cuando el cursor queda por encima */
+
 
 #M_12:before,
 #M_12:after {
@@ -79,15 +78,7 @@ body{
   background: red;
 }
 
-#M_12 {
-    width: 50px;
-    height: 50px;
-    transform: rotate(45deg);
-    background: red;
-    position: relative;
-    top: 10rem;
-    left: 10rem;
-  }
+
 
 #M_12:before,
 #M_12:after {
@@ -117,10 +108,10 @@ body{
     position: relative;
     top: 10rem;
     left: 10rem;
-    animation: beating 2s ease infinite;
+    animation: latido 2s ease infinite;
   }
   
-  @keyframes beating {
+  @keyframes latido {
     0% {
         transform: rotate(45deg) scale(1);
     }
@@ -132,25 +123,27 @@ body{
     }
   }
 
+/* El corazón aparece y late infinitamente cuando clikeas 12 veces al huevo */
+
   #M_2{
-    width: 0px;
-    height: 0px;
-    border-right: 70px solid transparent;
-    border-left: 70px solid transparent;
-    border-top: 100px solid #995cd1;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    
     cursor:grab;
     z-index: 21;
     position: relative;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 30px 10px 0 #d9534f;
+    -webkit-box-shadow: 30px 10px 0 #d9534f;
+    box-shadow: 30px 10px 0 #d9534f;
 
-    transition: transform 4s in;
-
-
+    transition: transform 4s;
   }
 
-
+  /* Cuando agarras la luna aparece el espacio y ésta rota infinitamente hasta desaparecer si la sueltas encima de él */
+  
   #fotoespacio{
     width: 200px;
     height: 200px;
@@ -160,3 +153,19 @@ body{
     z-index: 2;
     position: relative;
   }
+
+  .rainbow-pixel-canvas {
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    left: 650px;
+  
+    user-select: none;
+    touch-action: none;
+  }
+  
+  /* Pizarra de colores */
+
+
