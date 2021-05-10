@@ -14,7 +14,7 @@ btn.addEventListener("click",empezar)
 
 let fondo = 1;
 
-$("#principal").click(function(){
+$("#principal").dblclick(function(){
     if (fondo ==1){
         $("#principal").css(
             "background", "linear-gradient(30deg,lightsalmon,lightblue,lightpink)"
@@ -326,3 +326,11 @@ $("#M_22").hide();
      }
  })
  
+//Para refrescar la página si ya la has cafreado mucho
+let btn2 = document.getElementById("btn2")
+
+function limpiar(){
+    document.getElementById("#principal").reset();
+};
+
+btn2.addEventListener("click",limpiar)

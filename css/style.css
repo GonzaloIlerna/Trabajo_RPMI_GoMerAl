@@ -308,11 +308,13 @@ body{
 #G_2{
     background-color: darksalmon;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     cursor: move;
     z-index: 2;
+    bottom: 1%;
+    left: 1%;
 }
 
 #G_3{
@@ -495,3 +497,21 @@ body{
     z-index: 2;
     position: relative;
   }
+
+
+#btn2 {
+    position: absolute;
+    right: 45%;
+    bottom: 10%;
+    font-size: 30pt;
+    background-color: rgba(224, 224, 224, 0.363);
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#btn2 a{
+    color: black;
+    text-decoration: none;
+}
