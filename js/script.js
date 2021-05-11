@@ -136,14 +136,15 @@ $("#A_3").droppable({
 
 
 
-
 //Empieza la par de Java Script de Gonzalo
 
-btn.addEventListener("click",empezar);
-
+// Elementos que estan ocultos
 $("#G_6c").hide();
 
 $("#G_7c").hide();
+
+
+// Funciones para cambiar el fondo
 
 $("#G_1").click(function(){
     $("#principal").css("background", "repeating-radial-gradient(black, black 5px, white 5px, white 10px)")
@@ -153,16 +154,8 @@ $("#G_3").click(function(){
     $("#principal").css("background", "linear-gradient(30deg, rgb(255, 190, 241), white)")
 })
 
-let texto = document.getElementById("expl");
 
-let ocultar = document.getElementById("G_5");
-
-function quitar(){
-    document.getElementById("expl").style.display = "none"
-    document.getElementById("p2").style.display = "none"
-};
-
-ocultar.addEventListener("dblclick",quitar);
+//Función del drop del ojo de los iluminatis 
 
     $("#G_5").droppable({
              
@@ -203,15 +196,14 @@ $( "#G_7" ).draggable({
   }
   });
 
+
 $("#G_2").draggable();
 
 $("#G_1").draggable();
 
 
 
-// Hacer un dragabble revert y tambien un dropable que cuando sea afirmativo el 
-// el dropable se desactive el dragable y se quede donde esta el objeto/imagen
-// hacer que se desactive todo y no se pueda mover mas ese objeto
+//Hacer que se pueda dibujar en todo el fondo de la pantalla
 
 
     // VARIABLES
@@ -310,6 +302,7 @@ $("#G_1").draggable();
     // Eventos pantallas táctiles
     miCanvas.addEventListener('touchstart', empezarDibujo, false);
     miCanvas.addEventListener('touchmove', dibujarLinea, false);
+
 
 //Acaba la parte de js de las cosas de Gonzalo
 

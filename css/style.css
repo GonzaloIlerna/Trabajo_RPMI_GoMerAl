@@ -215,14 +215,14 @@ body{
 
     transform-style: preserve-3d;
     animation: rotate 5s linear infinite ;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 
 #A2_a, #A2_b, #A2_c {
     position: absolute;
     width: 200px;
     height: 200px;
-
+    cursor: grab;
     border: 10px solid white;
     border-radius: 50%;
 }
