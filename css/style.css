@@ -186,7 +186,7 @@ body{
     top: 30px;
     scale: 1;
     rotate: 0deg;
-
+    cursor:grab;
     transition: filter 2s,
     scale 2s ease-in-out,
     rotate 0.5s;
@@ -348,6 +348,8 @@ body{
     transition: all infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
+/* Empieza la parte de Gonzalo css */
+
 #G_1{
     background-color: rgb(255, 0, 0);
     position: absolute;
@@ -371,19 +373,21 @@ body{
     z-index: 2;
     bottom: 1%;
     left: 1%;
+    /* Un circulo que simplemente se puede arrastrar */
 }
 
 #G_3{
     width: 0; 
     height: 0; 
-    border-left: 100px solid #428bca;
-    border-top: 50px solid #f0ad4e;
-    border-bottom: 50px solid #d9534f; 
-    right: 10px;
-    bottom: 10px;
+    border-left: 200px solid #428bca;
+    border-top: 100px solid #f0ad4e;
+    border-bottom: 100px solid #d9534f; 
+    right: 20px;
+    bottom: 20px;
     position: absolute;
     cursor:wait;
     z-index: 2;
+    /* Es el cuadrado que está abajo a la derecha que es para cambiar el fondo */
 }
 
 #G_5{
@@ -405,6 +409,7 @@ body{
     z-index: 11;
     right: 2%;
     top: 50%;
+    cursor:grab;
 }
 
 #G_6 img{
@@ -420,6 +425,7 @@ body{
     left: 2%;
     top: 50%;
     opacity: 60%;
+    cursor:grab;
 }
 
 #G_7 img{
@@ -472,6 +478,11 @@ body{
     cursor: crosshair;
     z-index: 0;
 }
+
+/* Acaba la parte css de las figuras de Gonzalo */
+
+
+
 #M_12 {
     width: 50px;
     height: 50px;
@@ -541,28 +552,6 @@ body{
     z-index: 2;
     position: relative;
   }
-
-
-#btn2 {
-    position: absolute;
-    right: 45%;
-    bottom: 10%;
-    font-size: 30pt;
-    background-color: rgba(224, 224, 224, 0.363);
-    padding: 10px 15px 10px 15px;
-    border-radius: 50px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-#btn2 a{
-    color: black;
-    text-decoration: none;
-}
-
-
-
-
 
 
 @keyframes rotate {

@@ -137,11 +137,7 @@ $("#A_3").droppable({
 
 
 
-
-
-
-
-
+//Empieza la par de Java Script de Gonzalo
 
 btn.addEventListener("click",empezar);
 
@@ -314,6 +310,12 @@ $("#G_1").draggable();
     // Eventos pantallas táctiles
     miCanvas.addEventListener('touchstart', empezarDibujo, false);
     miCanvas.addEventListener('touchmove', dibujarLinea, false);
+
+//Acaba la parte de js de las cosas de Gonzalo
+
+
+
+
 let nclicks=0;
 
 $("#M_12").hide()
@@ -353,12 +355,3 @@ $("#M_22").hide();
           $("#M_2").css("transform" , "rotate(360deg)");
      }
  })
- 
-//Para refrescar la página si ya la has cafreado mucho
-let btn2 = document.getElementById("btn2")
-
-function limpiar(){
-    document.getElementById("#principal").reset();
-};
-
-btn2.addEventListener("click",limpiar)
