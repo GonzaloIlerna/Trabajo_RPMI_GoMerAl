@@ -312,17 +312,15 @@ $("#G_1").draggable();
 let nclicks=0;
 
 $("#M_12").hide()
-// corazon oculto
+// corazón oculto
 $("#M_1").click(function(){
     nclicks++;
     console.log(nclicks);
-if(nclicks==12){
+    if(nclicks==12){
         
         $("#M_12").css({
             "left": "2420px",
             "top": "150px",
-            
-
             
         })
 
@@ -331,20 +329,31 @@ if(nclicks==12){
         // corazon aparece
         $("#M_1").hide()
         // el huevo se esconde
-}
-});
+    }
+})
 
 $("#M_22").hide();
 
- $("#M_2").draggable({ 
+$("#M_2").draggable({ 
     start: function() {
         $("#M_22").show();
         
     }
 })
  
- $("#M_22").droppable({
+$("#M_22").droppable({
      drop: function (){
-          $("#M_2").css("transform" , "rotate(360deg)");
+          $("#M_2").css("transform" , "rotate(360deg) scale(0)");
+        //   $("#M_2").css("transform" , "scale(.0)");
+          
      }
- })
+})
+
+// El espacio aparece cuando agarras la luna e inmediatamente ésta gira al soltarla
+
+
+$("#M_3").click( function( event ) {
+    event.preventDefault();
+});
+
+// se pinta en la pizarra
