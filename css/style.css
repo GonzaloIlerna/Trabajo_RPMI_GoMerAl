@@ -154,6 +154,8 @@ body{
     border-radius: 50%;
     left: 10px;
     top: 30px;
+    z-index: 5;
+    
     scale: 1;
     rotate: 0deg;
     cursor:grab;
@@ -180,6 +182,7 @@ body{
     position: relative;
     top: 20%;
     left: 60%;
+    z-index: 5;
 
     transform-style: preserve-3d;
     animation: rotate 5s linear infinite ;
@@ -212,6 +215,7 @@ body{
     position: relative;
     top: 20%;
     left: 60%;
+    z-index: 5;
 
     transform-style: preserve-3d;
     animation: rotate 5s linear infinite;
@@ -543,7 +547,7 @@ body{
     height: 400px;
     top: 10px;
     left: 800px;
-    z-index: 2;
+    z-index: 1;
     position: relative;
   }
 
