@@ -140,6 +140,7 @@ body{
 }
 
 
+
 /* COMECOCOS */
 
 #A_1{
@@ -168,8 +169,6 @@ body{
 }
 
 
-
-
 /*ESFERA 3D*/
 
 #A_2 {
@@ -184,7 +183,6 @@ body{
 
     transform-style: preserve-3d;
     animation: rotate 5s linear infinite ;
-    /* animation-play-state: paused; */
 }
 
 #A2_a, #A2_b, #A2_c {
@@ -201,7 +199,6 @@ body{
 #A2_c {
     transform: rotateY(90deg);
 }
-
 
 
 
@@ -305,17 +302,14 @@ body{
     transform: rotateX(90deg) translateZ(200px);
 }
 
-
-#center img {
-    position: absolute;
-
-}
-
-
 #A_3:hover {
     transform: rotateX(90deg) skew(15deg, 15deg);
     transition: all infinite cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+
+
+
 
 /* Empieza la parte de Gonzalo css */
 
@@ -445,14 +439,14 @@ body{
     top: 0%;
     position: absolute;
     cursor: crosshair;
-    z-index: 0;
+    z-index: 1;
 }
 
 /* Acaba la parte css de las figuras de Gonzalo */
 
 
 
-
+/*MERCEDES*/
 
 
 
@@ -482,7 +476,7 @@ body{
 
 
 
-#M_12 {
+#m_1a {
     width: 50px;
     height: 50px;
     transform: rotate(45deg);
@@ -493,8 +487,8 @@ body{
 }
 
 
-#M_12:before,
-#M_12:after {
+#m_1a:before,
+#m_1a:after {
   content: "";
   height: 50px;
   width: 50px;
@@ -503,17 +497,17 @@ body{
   position: absolute;
 }
 
-#M_12:before {
+#m_1a:before {
     top: 0;
     left: -25px;
   }
   
-  #M_12:after {
+  #m_1a:after {
     top: -25px;
   }
 
 
-  #M_12 {
+  #m_1a {
     width: 50px;
     height: 50px;
     transform: rotate(45deg);
@@ -535,21 +529,20 @@ body{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    -moz-box-shadow: 30px 10px 0 #d9534f;
-    -webkit-box-shadow: 30px 10px 0 #d9534f;
-    box-shadow: 30px 10px 0 #d9534f;
+    -moz-box-shadow: 30px 10px 0 cornflowerblue;
+    -webkit-box-shadow: 30px 10px 0 cornflowerblue;
+    box-shadow: 30px 10px 0 cornflowerblue;
 
     transition: transform 4s;
   }
 
-  /* Cuando agarras la luna aparece el espacio y ésta rota infinitamente hasta desaparecer si la sueltas encima de él */
+  /* Cuando agarras la luna aparece el space y ésta rota infinitamente hasta desaparecer si la sueltas encima de él */
   
-  #fotoespacio{
-    width: 200px;
-    height: 200px;
+  #fotospace{
+    width: 400px;
+    height: 400px;
     top: 10px;
-    left: 200px;
-    border: solid 2px rgb(202, 15, 15);
+    left: 800px;
     z-index: 2;
     position: relative;
   }

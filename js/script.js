@@ -15,34 +15,34 @@ btn.addEventListener("click",empezar)
 let fondo = 1;
 
 $("#principal").dblclick(function(){
-    if (fondo ==1){
+    if (fondo == 1){
         $("#principal").css(
             "background", "linear-gradient(30deg,lightsalmon,lightblue,lightpink)"
         )
         fondo = 2
-
     }else if (fondo == 2){
         $("#principal").css(
-            "background", "radial-gradient(1000px,salmon,lightcyan,pink)",
+            "background", "radial-gradient(1000px,salmon,lightcyan,pink)"
         )
         fondo = 3
     }else if (fondo == 3){
         $("#principal").css(
-            "background", "circular-gradient(135deg,lightseagreen,lightcoral,#c18ef1)"
+            "background", "linear-gradient(lightsalmon,lightblue,lightpink)"
         )
-        fondo = 1
+        fondo = 4
     }else if (fondo == 4){
-        $("principal").css(
-            "background", "radial-gradient(lightsalmon,lightblue,lightpink)"
-        )
-        fondo = 5
-    }else if (fondo == 5){
-        $("principal").css(
-            "background", "repeating-linear-gradient(lightsalmon,lightblue,lightpink)"
+        $("#principal").css(
+            "background", "radial-gradient(1500px,lightseagreen,white,lightcoral)"
         )
         fondo = 1
     }
+   
 })
+
+
+
+
+
 
 
 // INTERACCIONES DE LOS ELEMENTOS
@@ -72,6 +72,7 @@ $("#malla_1").droppable({
     }
 })
 
+//efecto blur
 $("#malla_2").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
@@ -81,6 +82,7 @@ $("#malla_2").droppable({
     }
 })
 
+//blur + escala
 $("#malla_3").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
@@ -90,6 +92,7 @@ $("#malla_3").droppable({
     }
 })
 
+//escala
 $("#malla_4").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
@@ -99,6 +102,7 @@ $("#malla_4").droppable({
     }
 })
 
+//rotar 2vueltas
 $("#malla_5").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
@@ -108,6 +112,7 @@ $("#malla_5").droppable({
     }
 })
 
+//rotar
 $("#malla_6").droppable({
     accept:$("#A_1"),
     drop: function( event, ui ) {
@@ -121,18 +126,19 @@ $("#malla_6").droppable({
 
 // / / / / / / / / / / / / / A_2
 
+$("#A_2").click(function(){
+    $("#A_2").css("scale","2.5")
+})
+
+$("#A_2").dblclick(function(){
+    $("#A_2").css("scale","1.5")
+})
+    
 
 
 
 
 // / / / / / / / / / / / / / A_3
-
-$("#A_3").droppable({
-    accept:$("#A_2"),
-    drop: function( event, ui ) {
-        $("#A_2").css("animation", "running");
-    }
-})
 
 
 
@@ -311,20 +317,20 @@ $("#G_1").draggable();
 
 let nclicks=0;
 
-$("#M_12").hide()
+$("#m_1a").hide()
 // corazón oculto
 $("#M_1").click(function(){
     nclicks++;
     console.log(nclicks);
     if(nclicks==12){
         
-        $("#M_12").css({
+        $("#m_1a").css({
             "left": "2420px",
             "top": "150px",
             
         })
 
-        $("#M_12").show()
+        $("#m_1a").show()
         // document.getElementById("M_1").style.left="30px";
         // corazon aparece
         $("#M_1").hide()
@@ -332,24 +338,22 @@ $("#M_1").click(function(){
     }
 })
 
-$("#M_22").hide();
+$("#m_2a").hide();
 
 $("#M_2").draggable({ 
     start: function() {
-        $("#M_22").show();
+        $("#m_2a").show();
         
     }
 })
  
-$("#M_22").droppable({
+$("#m_2a").droppable({
      drop: function (){
           $("#M_2").css("transform" , "rotate(360deg) scale(0)");
-        //   $("#M_2").css("transform" , "scale(.0)");
-          
      }
 })
 
-// El espacio aparece cuando agarras la luna e inmediatamente ésta gira al soltarla
+// El icon aparece cuando agarras la luna e inmediatamente ésta gira al soltarla
 
 
 $("#M_3").click( function( event ) {
